@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArcoirisKid</title>
+	<link rel="stylesheet" href="../css/style.css">
+<!-- Comenzamos JSWOW (solo linkeo) -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Terminamos JSWOW (solo linkeo) -->
+
+</head>
+<body>
+
+	<div class="contenedor">
+
+	<header id="header">
+		<!-- Inicia nav -->
+		<nav class="StyleGradient" id="barra">
+
+			<img class="logoFlex animate__animated animate__slideInLeft" src="../img/logoarcoiris.png" width="70" height="70" alt="Logo ArcoirisKid">
+			<a class="sacarDecoration" href="index.html">
+			
+			</a>
+
+			<ul>
+				<li class="EfectoLista"><a href="../index.html">Inicio</a></li>
+				<li class="EfectoLista"><a href="../rsc/nosotros.html">Nosotros</a></li>
+				<li class="EfectoLista"><a href="../rsc/contacto.html">Contacto</a></li>
+				<li class="EfectoLista"><a href="../rsc/faqs.html">FAQ´s</a></li>
+				<li class="EfectoLista"><a href="../rsc/trabajaConNosotros.html">Trabaja con nosotros</a></li>
+
+			</ul>
+
+		</nav>
+	</header>
+	<main id="cuerpo">
+		
+		<img src="../img/Sliderprovisorio.png" width="700" height="400" alt="Imagen hereo/ Slider de fotos" class="encabezado_img--fluid" >
+		
+		<div class="flexboxLogoNosotros"><img class="animate__animated animate__slideInLeft" src="../img/logoarcoiris.png" width="100" height="100" alt="Logo ArcoirisKid">
+
+		<h1> CONTACTO</h1></div>
+
+		<form class="formStyle" action="envio.php" method="post">
+			<fieldset>
+			<legend> Datos personales</legend>
+
+			<label for="nombre">Nombre y apellido</label>
+
+			<input type="text" placeholder="Federico Canosa" name="nombre" id=" nombre">
+			<br>
+			<label for="email">Correo electrónico</label>
+			<input type="email" placeholder="emmail@email.com" name="email" id="email">
+
+			</fieldset>
+			<fieldset>
+				<legend>Se comunica para:</legend>
+				<label for="stock">consulta de stock</label>
+				<input type="radio" name="stock" id="stock" value="stock" >
+				<br>
+				<label for="cambio">Cambio de prenda</label>
+				<input type="radio" name="stock" id="cambio" value="cambio">
+				<br>
+				<fieldset>
+				<legend>En caso de cambio, el motivo por el cual debe realizarlo es:</legend>
+				<label for="talla">Talle incorrecto</label>
+				<input type="checkbox" name="talla" id="talla" value="talla">
+				<br>
+				<label for="falla">Falla, rotura, manchas, etc.</label>
+				<input type="checkbox" name="falla" id="falla" value="falla"></fieldset>
+			</fieldset>
+			<br>
+			<label for="mensaje">Comentarios adicionales:</label>
+			<br>
+			<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+			<br>
+			<input type="reset" value="Cancelar">
+			<input type="submit" value="Enviar">
+		</form>
+
+	</main>
+
+	<aside id="aside">
+
+	<h1>Aside provisional para el desafío</h1>
+
+	<img src="../img/faceFooter.png" width="50" height="50" alt="Logo con enlace a Facebook">
+	 
+	<img src="../img/LogoInstaFooter.png" width="50" height="50" alt="Logo con enlace a Instagram">
+
+
+
+	</aside>
+
+	<footer class="StyleGradient" id="pie">
+		<!-- Iniciamos logo y enlaces del footer  -->
+		<img src="../img/faceFooter.png" width="50" height="50" alt="Logo con enlace a Facebook"> 
+		<img src="../img/LogoInstaFooter.png" width="50" height="50" alt="Logo con enlace a Instagram">
+	
+		<p>Arcoiris 2021, todos los derechos reservados.</p>
+		<!-- terminamos logo y enlaces del footer  -->
+	</footer>
+	</div>
+
+<!-- Empezamos SCRIPT JSWOW -->
+
+<script src="../js/wow.min.js"></script>
+     <script>
+      new WOW().init();
+      </script>
+
+<!-- Terminamos SCRIPT JSWOW -->
+
+</body>
+</html>
