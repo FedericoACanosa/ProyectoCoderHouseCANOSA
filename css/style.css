@@ -6,15 +6,13 @@
 	padding: 0;
 }
 
-html{
-	font-size: 62.5%
-}
-
-
-
-
 
 /*selectores de etiqueta*/
+
+html{
+
+	width: 100%
+}
 
 body{
 	background-image: url(../img/pink_rice.png);
@@ -23,123 +21,19 @@ body{
 
 p{
 	color: #0C0B0B;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1rem;
 }
 
 article p{
 	color: #0C0B0B;
-	font-size: 2rem;
+	font-size: 1.3rem;
 	font-weight: 300;
-	line-height: 2rem;
+	line-height: 1.3rem;
 
 }
 
-h1 h2{
-	font-size: 4rem;
-	font-family: 'Smooch Sans', sans-serif;
-	font-weight: 300;
-	line-height: 4rem;
-}
-/*BOTONERA*/
-/*.encabezado nav{
-	background-color: #F384A9;
-	padding: 10px 30px;
-}
-
-.encabezado nav ul{
-	
-}
-
-nav a img{
-	text-align: left;
-}
-
-
-.encabezado nav ul li{
-	list-style: none;
- 	font-size: 2rem;
- 
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #514E50
-}
-ol li{
-	color: #0C0B0B;
-	font-size: 1.4rem;
-	font-weight: 300;
-	line-height: 1.4rem; 
-}*/
-
-/*BOTONERA FLEXBLOX*/
-
-nav{
-	/*background-color: #F384A9;*/
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-
-}
-
-nav ul{
-	list-style: none;
-	text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-self: center;
-    flex-grow: 1;
-}
-
-nav ul li{
-	list-style: none;
- 	margin-left: 10px;
- 	color: #0C0B0B;
-	font-size: 1.9rem;
-	font-weight: 300;
-	line-height: 1.4rem;
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #514E50
-
-	}
-
-	aside{
-	background-color: green;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*SUBCLASE HOVER*/
-
-.encabezado nav ul li a:hover{
-	font-weight: 500;
-	color: black;
-}
-
-
-/* FIN BOTONERA*/
-
-/*Footer*/
-footer{
-	background-color: #F384A9;
-    flex-direction: row;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-}
-
-/*Fin Footer*/
 
 
 /*selectores de clase, estilo CamelCase*/
@@ -157,17 +51,6 @@ footer{
 
 .textGrey{
 	color: #615D5D
-}
-
-.bgLight{
-
-background-color: rgba(245, 133, 167, 0.8);
-
-}
-
-.bgDark{
-
-	background-color: rgba(195, 190 ,190 , 0.8);
 }
 
 /*Selectores de clase, estilo BEM*/
@@ -193,185 +76,15 @@ background-color: rgba(245, 133, 167, 0.8);
 	text-align: center;
 }
 
-/*COMENZAMOS A APLICAR FLEXBOX INDEX*/
-
-.flexboxLogoNoticias{
-
-	display: flex;
-	align-items: center;
-
-}
-.flexboxImagenesIndex{
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexboxImagenesIndexhijo img{
-	padding-left: 70px;
-    padding-top: 10px;
-}
-
-.flexBotonera{
-
-	display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-content: center;
-    align-items: flex-end;
-}
-
-/*COMENZAMOS A APLICAR FLEXBOX CONTACTO*/
-
-.flexboxLogoContacto{
-
-	display: flex;
-	align-items: center;
-
-}
-
-/*COMENZAMOS A APLICAR FLEXBOX FAQS*/
-
-.flexboxLogoFAQ{
-
-	display: flex;
-	align-items: center;
-}
-
-/*COMENZAMOS A APLICAR FLEXBOX NOSOTROS*/
-
-.flexboxLogoNosotros{
-
-	display: flex;
-	align-items: center;
-
-}
-
-/*COMENZAMOS A APLICAR FLEXBOX TRABAJA CON NOSOTROS*/
-
-.flexboxLogoTraConNos{
-
-	display: flex;
-	align-items: center;
-
-}
-
 .estiloLista{
 
 	font-size: 1.5rem
 }
 
-/*COMENZAMOS CON GRID, INDEX*/
+.ImagenesMinimizadas{
 
-.contenedor{
-
-	display: grid;
-	grid-template-columns:1fr;
-	grid-template-rows: auto;
-	grid-template-areas:  
-	"barra" 
-	"header" 
-	"cuerpo" 
-	"aside"
-	"pie";
-}
-
-#barra{
-
-grid-area: barra;
-
-}
-
-#header{
-
-grid-area: header;
-
-}
-
-#cuerpo{
-
-grid-area: cuerpo;
-
-}
-
-#aside{
-	grid-area: aside
-}
-
-#pie{
-
-grid-area: pie;
-
-}
-
-/*COMENZAMOS CON LOS MEDIA Q*/
-
-@media (min-width: 800px){
-
-.contenedor{
-
-	grid-template-columns: 80vw 20vw;
-	grid-template-rows: repeat(4, auto);
-	grid-template-areas:
-	"barra barra" 
-	"header header" 
-	"cuerpo aside" 
-	"pie pie";
-}
-
-#cuerpo img{
-
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-left: 50px
-
-}
-
-#aside{
-	flex-direction: column;
-	align-content: center;
-	justify-content: space-around;
-}
-
-}
-
-@media (min-width: 900px){
-
-	.flexboxImagenesIndexhijo{
-		flex-direction: row;
-
-	}
-
-	#cuerpo img{
-	margin: 10px 0px;
-
-}
-
-}
-
-@media (min-width: 1112px){
-
-	.contenedor{
-
-		grid-template-columns: 10vw 70vw 20vw;
-		grid-template-rows:repeat(4, auto);
-		grid-template-areas:
-		"barra barra barra" 
-		"header header header" 
-		"cuerpo cuerpo aside" 
-		"pie pie pie";
-	}
-
-#cuerpo article img{
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
+width: 50px
+height: 50px
 
 }
 
@@ -386,7 +99,7 @@ margin-left: 50px
 .EfectoLista:hover{
 
 transform: rotateY(20deg);
-transition: transform 0.5s;
+transition: transform 0.8s;
 
 }
 
@@ -396,3 +109,224 @@ transition: transform 0.5s;
 	cursor: pointer;
 	transition: 1.2s
 }
+
+
+/*Arrancamos con BS*/
+
+/*BODY*/
+
+.fix{
+
+	overflow-x: hidden;
+}
+
+/*NAV*/
+
+.bg-light{
+
+    --bs-bg-opacity: 1;
+    background: linear-gradient(to top, #BC3961, #D6577E );
+   
+}
+
+.SizeText{
+
+	font-size: 1.1rem;
+}
+
+/*SLIDER*/
+
+.slide{
+
+margin: 10px 0px;
+
+
+}
+
+.slide img{
+
+	height: 70vh
+}
+
+/*CONTENIDO PRINCIPAL*/
+
+.novedades_articulo {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: solid 2px violet;
+}
+
+.img, svg {
+    vertical-align: initial;
+}
+
+.clase{
+
+	text-align: center;
+
+}
+
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	margin: 10px 0px;
+	background: linear-gradient(to bottom, #BC3961, #D6577E );
+	height:auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.bi-facebook{
+
+	font-size: 35px;
+	color: black;
+	padding-left: 5px;
+	padding-right:5px;
+}
+
+.bi-facebook:hover{
+	color: white;
+}
+
+.bi-instagram{
+
+	font-size: 35px;
+	color: black;
+	margin-left: 5px;
+	margin-right:5px;
+}
+
+.bi-instagram:hover{
+	color: white;
+}
+
+.bi-whatsapp{
+
+	font-size: 35px;
+	color: black;
+	margin-left: 5px;
+	margin-right:5px;
+}
+
+.bi-whatsapp:hover{
+	color: white;
+}
+
+.LetraFooter{
+
+	font-size: 0.7rem;
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ALMACENAMIENTO PARA COSAS EN DESUSO*/
+
+/*h1 h2{
+	font-size: 4rem;
+	font-family: 'Smooch Sans', sans-serif;
+	font-weight: 300;
+	line-height: 4rem;
+}
+*/
+
+/*
+nav ul li{
+	list-style: none;
+ 	margin-left: 10px;
+ 	color: #0C0B0B;
+	font-size: 1.9rem;
+	font-weight: 300;
+	line-height: 1.4rem;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #514E50
+
+	}
+
+	*/
+
+/*SUBCLASE HOVER
+
+.encabezado nav ul li a:hover{
+	font-weight: 500;
+	color: black;
+}
+*/
+
+/* FIN BOTONERA*/
+
+/*Footer
+footer{
+	background-color: #F384A9;
+    flex-direction: row;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+*/
+/*Fin Footer*/
+
+
+/*.bgLight{
+
+background-color: rgba(245, 133, 167, 0.8);
+
+}
+
+.bgDark{
+
+	background-color: rgba(195, 190 ,190 , 0.8);
+}
+
+*/
