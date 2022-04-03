@@ -169,6 +169,29 @@ margin: 10px 0px;
 
 }
 
+/*CARDS del MAIN*/
+
+.card{
+
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: transparent;
+    border: none;
+    border-radius: 0rem;
+    font-size: 10rem
+    margin-right:2rem;
+
+}
+
+.botonCardTop{
+
+	vertical-align: top;
+}
+
+
 /*FOOTER*/
 
 footer{
@@ -228,49 +251,6 @@ footer{
 	text-align: left;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
