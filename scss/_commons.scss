@@ -1,5 +1,11 @@
 // Variables globales
 
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
 $colorFondo:linear-gradient(to top, #BC3961, #D6577E );
 $colorTexto:#0C0B0B;
 $colorTextoSec:#615D5D;
@@ -10,3 +16,38 @@ $w-75:75%;
 $w-50:50%;
 $w-25:25%;
 
+//Mixings de prueba
+
+@mixin textoGeneral($font-size,$line-height,$color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+}
+//@include textoGeneral
+
+@mixin ImagenesFooter($font-size,$color,$margin-left,$margin-right){
+
+	font-size: $font-size;
+	color: $color;
+	margin-left: $margin-left;
+	margin-right: $margin-right;
+	&:hover{
+		color: white;
+	}
+
+
+}
+//@include ImagenesFooter
+
+//Map
+
+$paleta:(
+
+'uno':#BC3961,
+'dos':#D6577E,
+'tres':#0C0B0B,
+'cuatro':#615D5D,
+'cinco':#0c0b0b,
+'seis':#0acac6,
+'siete':#212529,
+);

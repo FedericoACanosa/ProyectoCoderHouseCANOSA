@@ -6,3 +6,81 @@
 			height: 70vh;
 		}	
 }
+
+//Body
+
+html{
+	width: 100%;
+		body{
+			background-image: url(../img/pink_rice.png);
+			background-attachment: fixed;
+			p{
+				@include textoGeneral(1.2rem,2rem,$colorTexto);
+				font-family: $fontMain;
+				font-weight: 300;
+				article{
+					color: #0C0B0B;
+					font-size: 1.3rem;
+					font-weight: 300;
+					line-height: 1.3rem;
+				}
+			}
+		}
+}
+
+.novedades_articulo{
+width: 100%;
+height: auto;
+margin: 10px auto;
+padding: 10px 30px;
+box-sizing: border-box;
+border: solid 2px violet;
+}
+
+.img, svg {
+    vertical-align: initial;
+}
+
+.clase{
+
+	text-align: center;
+
+}
+
+.card{
+
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: transparent;
+    border: none;
+    border-radius: 0rem;
+    font-size: 1.3rem;
+    margin-right:2rem;
+
+}
+
+.botonCardTop{
+
+	vertical-align: top;
+}
+
+.btn-primary {
+    color: map-get($map:$paleta,$key:'tres');
+    background-color: map-get($map:$paleta,$key:'seis');
+    border-color: map-get($map:$paleta,$key:'siete');
+}
+
+.btn-roundedExt {
+    @extend .btn-primary;
+    border-radius: 10px
+}
+
+
+.alineacionFormulario{
+
+	text-align: left;
+
+}

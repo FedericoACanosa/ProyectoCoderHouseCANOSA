@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Smooch+Sans:wght@500&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; }
+
 .bg-light {
   background: linear-gradient(to top, #BC3961, #D6577E);
   position: sticky; }
@@ -6,7 +11,7 @@
 ul li {
   list-style: none;
   color: #0C0B0B;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 0.6rem; }
   ul li a {
@@ -32,6 +37,63 @@ ul li {
   .slide img {
     height: 70vh; }
 
+html {
+  width: 100%; }
+  html body {
+    background-image: url(../img/pink_rice.png);
+    background-attachment: fixed; }
+    html body p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: #0C0B0B;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+      html body p article {
+        color: #0C0B0B;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.3rem; }
+
+.novedades_articulo {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: solid 2px violet; }
+
+.img, svg {
+  vertical-align: initial; }
+
+.clase {
+  text-align: center; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: transparent;
+  border: none;
+  border-radius: 0rem;
+  font-size: 1.3rem;
+  margin-right: 2rem; }
+
+.botonCardTop {
+  vertical-align: top; }
+
+.btn-primary, .btn-roundedExt {
+  color: #0C0B0B;
+  background-color: #0acac6;
+  border-color: #212529; }
+
+.btn-roundedExt {
+  border-radius: 10px; }
+
+.alineacionFormulario {
+  text-align: left; }
+
 footer {
   width: 100%;
   margin: 10px 0px;
@@ -45,8 +107,8 @@ footer {
   footer .bi-facebook {
     font-size: 35px;
     color: #0C0B0B;
-    padding-left: 5px;
-    padding-right: 5px; }
+    margin-left: 5px;
+    margin-right: 5px; }
     footer .bi-facebook:hover {
       color: white; }
   footer .bi-instagram {
