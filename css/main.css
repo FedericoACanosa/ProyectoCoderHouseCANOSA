@@ -94,6 +94,35 @@ html {
 .alineacionFormulario {
   text-align: left; }
 
+.TituloV1 {
+  font-size: 1.4rem;
+  color: #black; }
+
+.ListaTrabConNos {
+  color: #black;
+  text-align: center;
+  list-style-type: none; }
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #dbadad;
+  border: 0; }
+
+.accordion-item {
+  background-color: #dbadad;
+  border: 0; }
+
+.TextAcordion {
+  font-size: 16px;
+  padding: 16px 20px; }
+
 footer {
   width: 100%;
   margin: 10px 0px;

@@ -39,6 +39,13 @@ $w-25:25%;
 }
 //@include ImagenesFooter
 
+@mixin TituloV1($font-size,$color){
+
+	font-size: $font-size;
+	color: $color;
+
+}
+
 //Map
 
 $paleta:(
