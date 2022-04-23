@@ -7,6 +7,10 @@
 		}	
 }
 
+.ImgSlider{
+	object-fit: cover;
+}
+
 //Body
 
 html{
@@ -30,6 +34,14 @@ html{
 
 .novedades_articulo{
 width: 100%;
+height: auto;
+margin: 10px auto;
+padding: 10px 30px;
+box-sizing: border-box;
+border: solid 2px violet;
+}
+
+.novedades_nosotros{
 height: auto;
 margin: 10px auto;
 padding: 10px 30px;
@@ -100,6 +112,15 @@ border: solid 2px violet;
 
 }
 
+.btn-primaryTCN {
+    color: map-get($map:$paleta,$key:'tres');
+    background-color: map-get($map:$paleta,$key:'ocho');
+    border-color: map-get($map:$paleta,$key:'siete');
+    &:hover{
+    	color: map-get($map:$paleta,$key:'cuatro');
+    }
+}
+
 //Estilos FAQ
 
 .accordion-button {
@@ -125,4 +146,3 @@ border: solid 2px violet;
 	font-size: 16px;
 	padding:16px 20px;
 }     
-

@@ -17,6 +17,7 @@ position:sticky;
 				text-decoration: none;
 				color: $colorTexto;
 				font-family:$fontMain;
+				font-weight: 500;
 				&:hover{
 					transform: rotateY(20deg);
 					transition: transform 0.8s;

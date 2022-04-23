@@ -17,7 +17,8 @@ ul li {
   ul li a {
     text-decoration: none;
     color: #0C0B0B;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
     ul li a:hover {
       transform: rotateY(20deg);
       transition: transform 0.8s; }
@@ -36,6 +37,9 @@ ul li {
   margin: 10px 0px; }
   .slide img {
     height: 70vh; }
+
+.ImgSlider {
+  object-fit: cover; }
 
 html {
   width: 100%; }
@@ -56,6 +60,13 @@ html {
 
 .novedades_articulo {
   width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: solid 2px violet; }
+
+.novedades_nosotros {
   height: auto;
   margin: 10px auto;
   padding: 10px 30px;
@@ -102,6 +113,13 @@ html {
   color: #black;
   text-align: center;
   list-style-type: none; }
+
+.btn-primaryTCN {
+  color: #0C0B0B;
+  background-color: #dbadad;
+  border-color: #212529; }
+  .btn-primaryTCN:hover {
+    color: #615D5D; }
 
 .accordion-button {
   position: relative;
