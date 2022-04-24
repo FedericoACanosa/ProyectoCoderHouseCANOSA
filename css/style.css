@@ -1,318 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Smooch+Sans:wght@500&display=swap');
-
-*{
-	font-family: 'Roboto', sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-
-/*selectores de etiqueta*/
-
-html{
-
-	width: 100%;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
 body{
-	background-image: url(../img/pink_rice.png);
-	background-attachment: fixed;
+    height: 95vh;
+    background: #000000;
+    text-align: center;
+    color: #E0E0E0;
+    font-family: 'Fira Mono', monospace;
 }
-
-p{
-	color: #0C0B0B;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 1rem;
+h1{
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
 }
-
-article p{
-	color: #0C0B0B;
-	font-size: 1.3rem;
-	font-weight: 300;
-	line-height: 1.3rem;
-
+div{
+    transform-style: preserve-3d;
 }
-
-
-
-/*selectores de clase, estilo CamelCase*/
-
-.formStyle{
-
-	color: #0C0B0B;
-	font-size: 1.4rem;
-	line-height: 1.4rem;
+svg{
+    width: clamp(300px , 70% , 600px);
+    height: 500px;
+  
 }
-
-.sacarDecoration{
-	text-decoration: none;
-}
-
-.textGrey{
-	color: #615D5D
-}
-
-/*Selectores de clase, estilo BEM*/
-
-.eliminar_subr_enlaces{
-	text-decoration: none;
-}
-
-.encabezado_img--fluid{
-	width: 100%
-}
-
-.novedades_articulo{
-	width: 90%;
-	height: auto;
-	margin: 10px auto;
-	padding: 10px 30px;
-	box-sizing: border-box;
-	border: solid 2px violet;
-}
-
-.center{
-	text-align: center;
-}
-
-.estiloLista{
-
-	font-size: 1.5rem
-}
-
-.ImagenesMinimizadas{
-
-width: 50px
-height: 50px
-
-}
-
-}
-/*COMENZAMOS CON ANIMACIONES INDEX*/
-
-.StyleGradient{
-
-	background: linear-gradient(to top, #BC3961, #D6577E )
-}
-
-.EfectoLista:hover{
-
-transform: rotateY(20deg);
-transition: transform 0.8s;
-
-}
-
-.zoomImagenes:hover{
-
-	transform: scale(0.9);
-	cursor: pointer;
-	transition: 1.2s
-}
-
-
-/*Arrancamos con BS*/
-
-/*BODY*/
-
-.fix{
-
-	overflow-x: hidden;
-}
-
-/*NAV*/
-
-.bg-light{
-
-    --bs-bg-opacity: 1;
-    background: linear-gradient(to top, #BC3961, #D6577E );
+#rocket{
+    
+    transform: translateY(750px);
    
+    animation: launch 2s ease-out forwards;
 }
 
-.SizeText{
+@keyframes launch {
+    from {
+        transform: translateY(750px);
+    }
+    to{
+        perspective: 500px;
+        transform: translateY(0px); 
+    }
+}
+#stars {
+    animation: twinkling 2s linear ;
+}
+@keyframes twinkling {
 
-	font-size: 1.1rem;
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.text{
+    opacity: 0;
+    animation:appear 1s ease-in forwards;
+    animation-delay: 1.8s;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+a{
+    color:#F66947;
+    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
+body{
+    height: 95vh;
+    background: #000000;
+    text-align: center;
+    color: #E0E0E0;
+    font-family: 'Fira Mono', monospace;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+div{
+    transform-style: preserve-3d;
+}
+svg{
+    width: clamp(300px , 70% , 600px);
+    height: 500px;
+  
+}
+#rocket{
+    
+    transform: translateY(750px);
+   
+    animation: launch 2s ease-out forwards;
 }
 
-/*SLIDER*/
-
-.slide{
-
-margin: 10px 0px;
-
-
+@keyframes launch {
+    from {
+        transform: translateY(750px);
+    }
+    to{
+        perspective: 500px;
+        transform: translateY(0px); 
+    }
 }
-
-.slide img{
-
-	height: 70vh
+#stars {
+    animation: twinkling 2s linear ;
 }
+@keyframes twinkling {
 
-/*CONTENIDO PRINCIPAL*/
-
-.novedades_articulo {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    padding: 10px 30px;
-    box-sizing: border-box;
-    border: solid 2px violet;
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
-
-.img, svg {
-    vertical-align: initial;
+.text{
+    opacity: 0;
+    animation:appear 1s ease-in forwards;
+    animation-delay: 1.8s;
 }
-
-.clase{
-
-	text-align: center;
-
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
-
-/*CARDS del MAIN*/
-
-.card{
-
-	position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background: transparent;
-    border: none;
-    border-radius: 0rem;
-    font-size: 10rem
-    margin-right:2rem;
-
+a{
+    color:#F66947;
+    text-decoration: none;
 }
-
-.botonCardTop{
-
-	vertical-align: top;
-}
-
-
-/*FOOTER*/
-
-footer{
-	width: 100%;
-	margin: 10px 0px;
-	background: linear-gradient(to bottom, #BC3961, #D6577E );
-	height:auto;
-	display: flex;
-	justify-content: flex-start;
-}
-
-.bi-facebook{
-
-	font-size: 35px;
-	color: black;
-	padding-left: 5px;
-	padding-right:5px;
-}
-
-.bi-facebook:hover{
-	color: white;
-}
-
-.bi-instagram{
-
-	font-size: 35px;
-	color: black;
-	margin-left: 5px;
-	margin-right:5px;
-}
-
-.bi-instagram:hover{
-	color: white;
-}
-
-.bi-whatsapp{
-
-	font-size: 35px;
-	color: black;
-	margin-left: 5px;
-	margin-right:5px;
-}
-
-.bi-whatsapp:hover{
-	color: white;
-}
-
-.LetraFooter{
-
-	font-size: 0.7rem;
-	color:black;
-}
-
-
-.alineacionFormulario{
-
-	text-align: left;
-
-}
-
-
-
-/*ALMACENAMIENTO PARA COSAS EN DESUSO*/
-
-/*h1 h2{
-	font-size: 4rem;
-	font-family: 'Smooch Sans', sans-serif;
-	font-weight: 300;
-	line-height: 4rem;
-}
-*/
-
-/*
-nav ul li{
-	list-style: none;
- 	margin-left: 10px;
- 	color: #0C0B0B;
-	font-size: 1.9rem;
-	font-weight: 300;
-	line-height: 1.4rem;
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #514E50
-
-	}
-
-	*/
-
-/*SUBCLASE HOVER
-
-.encabezado nav ul li a:hover{
-	font-weight: 500;
-	color: black;
-}
-*/
-
-/* FIN BOTONERA*/
-
-/*Footer
-footer{
-	background-color: #F384A9;
-    flex-direction: row;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-}
-*/
-/*Fin Footer*/
-
-
-/*.bgLight{
-
-background-color: rgba(245, 133, 167, 0.8);
-
-}
-
-.bgDark{
-
-	background-color: rgba(195, 190 ,190 , 0.8);
-}
-
-*/
